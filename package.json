@@ -1,5 +1,4 @@
 {
-    "name": "node pdf service",
     "description": "This is Dynamic Generation of Pdf",
     "author": "Md Nazmul Hassan",
     "main": "server.js",
@@ -14,5 +13,5 @@
     },
     "scripts": {
 	  "start": "node server.js"
-	},
+	}
 }
