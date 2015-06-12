@@ -42,7 +42,7 @@ app.use(function(req, res, next) {
 router.get('/', function(req, res) {
     res.json({ message: 'hooray! welcome to our api!' });   
 });
-router.post('/pdf-gen', function(req, res) {
+router.get('/pdf-gen', function(req, res) {
 	console.log('called');
 	pdf.create("<h1>Hello World</h1>").toBuffer(function(err, buffer){
 		if (err) return res.end('unable to download pdf');
