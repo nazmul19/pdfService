@@ -1,0 +1,22 @@
+doctype html
+html
+	head
+		link(rel="stylesheet", href="lib/bootstrap/css/bootstrap.min.css")
+		link(rel="stylesheet", href="lib/jquery/css/jquery-ui-1.10.4.min.css")
+		script(type="text/javascript", src="lib/jquery/jquery-1.7.1.js")
+		script(type="text/javascript", src="lib/jquery/jquery-ui-1.10.3.custom.min.js")
+		script(type="text/javascript", src="lib/ckeditor/ckeditor.js")
+		script(type="text/javascript", src="lib/ckeditor/adapters/jquery.js")
+		script(type="text/javascript", src="lib/ckeditor/config.js")
+		script(type="text/javascript", src="js/application.js")
+		title html to pdf conversion
+	body
+		.container
+			h1 your html+css+svg Content
+			#dialog
+			form(action='api/pdf-gen',method='post')
+				button(type='submit', class='btn btn-primary') Generate Pdf
+				.input-group
+					textarea#mytext.form-control(name='htmlContent', rows='25', cols='10')
+					span(class='input-group-addon btn btn-primary',onclick='preview()') Preview
+			
